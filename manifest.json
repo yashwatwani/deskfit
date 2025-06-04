@@ -28,12 +28,12 @@
     "web_accessible_resources": [
       {
         "resources": [
-          "gifs/*",             // Wildcard for all gifs
-          "icons/*",            // Wildcard for all icons
-          "*.html",             // Wildcard for all html files at root
-          "*.js"                // Wildcard for all js files at root (except background)
+          "gifs/*",
+          "icons/*",
+          "*.html",
+          "*.js"
         ],
-        "matches": ["<all_urls>"] // Or even more specifically: ["chrome-extension://[YOUR_EXTENSION_ID]/*"] but <all_urls> should be fine for now
+        "matches": ["<all_urls>"]
       }
     ]
   }
