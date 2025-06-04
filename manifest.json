@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "DeskFit",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Your personal wellness assistant for Pomodoro, stretching, and hydration.",
     "permissions": [
       "storage",
