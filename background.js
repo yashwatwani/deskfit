@@ -1,9 +1,9 @@
 // --- Configuration (Define durations in minutes for clarity) ---
 const WORK_MINUTES = 25;
 const BREAK_MINUTES = 5;
-const STRETCH_INTERVAL_MINUTES = 5; // Your test value (e.g., 45)
-const EXERCISE_INTERVAL_MINUTES = 1; // Your test value (e.g., 120)
-const WATER_REMINDER_INTERVAL_MINUTES = 5; // Your test value (e.g., 60)
+const STRETCH_INTERVAL_MINUTES = 60; // Your test value (e.g., 45)
+const EXERCISE_INTERVAL_MINUTES = 150; // Your test value (e.g., 120)
+const WATER_REMINDER_INTERVAL_MINUTES = 60; // Your test value (e.g., 60)
 const MAX_WATER_GLASSES = 8;
 
 // --- Derived constants in seconds for internal timer logic ---
