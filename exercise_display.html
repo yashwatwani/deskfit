@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise Time!</title>
+    <style>
+        body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 90vh; font-family: sans-serif; background-color: #efe; margin:0; padding:10px; box-sizing: border-box;}
+        #exercise-container { text-align: center; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        #exercise-gif { max-width: 90%; max-height: 350px; border: 2px solid #ccc; margin-bottom: 15px; object-fit: contain; }
+        #exercise-instruction { font-size: 1.5em; margin-bottom: 20px; color: #333; }
+        button { padding: 10px 20px; font-size: 1em; cursor: pointer; background-color: #28a745; color:white; border:none; border-radius: 5px; }
+        button:hover { background-color: #1e7e34; }
+    </style>
+</head>
+<body>
+    <div id="exercise-container">
+        <h1>Time for Exercise!</h1>
+        <img id="exercise-gif" src="" alt="Exercise GIF" style="display:none;">
+        <p id="exercise-instruction">Do 10 reps of: <strong id="exercise-name"></strong></p>
+        <button id="finish-exercise-btn">Done!</button>
+    </div>
+    <script src="exercise_display.js"></script>
+</body>
+</html>

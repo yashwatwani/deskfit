@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeskFit</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DeskFit</h1>
+
+        <!-- Pomodoro Section -->
+        <div id="pomodoro-section">
+            <h2>Pomodoro Timer</h2>
+            <div id="pomodoro-timer-display">25:00</div>
+            <div class="pomodoro-controls">
+                <button id="start-pomodoro">Start Work</button>
+                <button id="pause-pomodoro">Pause</button>
+                <button id="reset-pomodoro">Reset</button>
+            </div>
+            <p>Status: <span id="pomodoro-status">Idle</span></p>
+            <p>Today's Pomodoros: <span id="pomodoros-completed-count">0</span></p> <!-- MODIFIED/ADDED -->
+        </div>
+
+        <!-- Water Section -->
+        <div id="water-section">
+            <h2>Hydration Tracker</h2>
+            <p>Glasses drunk: <span id="water-count">0</span> / 8</p>
+            <button id="log-water">Log Water</button>
+        </div>
+
+        <!-- Quick Info (Optional) -->
+        <div id="info-section">
+            <h2>Next Reminders</h2>
+            <p>Next Stretch: <span id="next-stretch-time">-</span></p>
+            <p>Next Exercise: <span id="next-exercise-time">-</span></p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

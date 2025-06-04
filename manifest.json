@@ -1,13 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "WellnessMax",
+    "name": "DeskFit",
     "version": "1.0",
     "description": "Your personal wellness assistant for Pomodoro, stretching, and hydration.",
     "permissions": [
-      "storage",        // To save user data and settings
-      "alarms",         // For timed events (Pomodoro, stretches, water)
-      "notifications",  // To show alerts
-      "tabs"            // To open new tabs for stretch/exercise display
+      "storage",
+      "alarms",
+      "notifications",
+      "tabs"
     ],
     "action": {
       "default_popup": "popup.html",
@@ -28,14 +28,12 @@
     "web_accessible_resources": [
       {
         "resources": [
-          "gifs/stretching/*",
-          "gifs/exercise/*",
-          "stretch_display.html",
-          "stretch_display.js",
-          "exercise_display.html",
-          "exercise_display.js"
+          "gifs/*",             // Wildcard for all gifs
+          "icons/*",            // Wildcard for all icons
+          "*.html",             // Wildcard for all html files at root
+          "*.js"                // Wildcard for all js files at root (except background)
         ],
-        "matches": ["<all_urls>"]
+        "matches": ["<all_urls>"] // Or even more specifically: ["chrome-extension://[YOUR_EXTENSION_ID]/*"] but <all_urls> should be fine for now
       }
     ]
   }
